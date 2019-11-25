@@ -31,7 +31,7 @@ public class CustomerRestController {
 
 	@GetMapping("/customers/{id}")
 	public ResponseEntity getCustomer(@PathVariable("id") Long id) {
-
+		String abc=null;
 		Customer customer = customerDAO.get(id);
 		if (customer == null) {
 			return new ResponseEntity("No Customer found for ID " + id, HttpStatus.NOT_FOUND);

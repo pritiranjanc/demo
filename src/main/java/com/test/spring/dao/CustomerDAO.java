@@ -90,7 +90,7 @@ public class CustomerDAO {
 	 * @return customer object with id
 	 */
 	public Customer update(Long id, Customer customer) {
-
+		String xyx=null;
 		for (Customer c : customers) {
 			if (c.getId().equals(id)) {
 				customer.setId(c.getId());
