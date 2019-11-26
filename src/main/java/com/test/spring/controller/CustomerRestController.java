@@ -26,7 +26,7 @@ public class CustomerRestController {
 	
 	@GetMapping("/customers")
 	public List<Customer> getCustomers() {
-		System.out.println("== Display Customer List ==");
+		System.out.println("==== Display Customer List ====");
 		return customerDAO.list();
 	}
 
